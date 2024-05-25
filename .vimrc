@@ -109,7 +109,7 @@ command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set 7 lines to the cursor - when moving vertically using j/k
-set so=7
+" set so=7
 
 " Avoid garbled characters in Chinese language windows OS
 let $LANG='en'
@@ -148,7 +148,7 @@ set ignorecase
 set smartcase
 
 " Highlight search results
-set hlsearch
+" set hlsearch
 
 " Makes search act like search in modern browsers
 set incsearch
@@ -461,18 +461,20 @@ set bri
 set briopt=shift:0,min:80
 
 " When using gq now it only applys it to lines end in space or too long
-" set fo+=w
+set fo+=w
 
 " Stop vim from rendering underlines in a tags
 let html_no_rendering=1
 
 " Enable autocomplete html
-" autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
-" 'Cut' and put that into volatile register, so it just deletes it.
+" 'Cut' and put that into volatile register.
 nnoremap <leader>d "_d
+nnoremap <leader>c "_c
 xnoremap <leader>d "_d
 xnoremap <leader>p "_dP
+
 " Select all shortcut
 nnoremap <leader>a ggVG
 " Fast moving with Shift + h/j/k/l
@@ -480,11 +482,20 @@ nnoremap <leader>a ggVG
 " nnoremap L $
 " nnoremap J <C-d>
 " nnoremap K <C-u>
+
 " Autocomplete pair of characterers
-""inoremap ( ()<Esc>i
-""inoremap { {}<Esc>i
-""inoremap {<CR> {<CR>}<Esc>O
-""inoremap [ []<Esc>i
-""inoremap < <><Esc>i
-""inoremap ' ''<Esc>i
-""inoremap " ""<Esc>i
+inoremap ( ()<Esc>i 
+inoremap { {}<Esc>i
+inoremap {<CR> {<CR>}<Esc>O
+inoremap [ []<Esc>i
+inoremap < <><Esc>i
+inoremap ' ''<Esc>i
+inoremap " ""<Esc>i
+
+" To create terminals more easy inside vim
+" vim-powered terminal in split window
+""map <Leader>t :term ++close<cr>
+""tmap <Leader>t <c-w>:term ++close<cr>
+""" vim-powered terminal in new tab
+""map <Leader>T :tab term ++close<cr>
+""tmap <Leader>T <c-w>:tab term ++close<cr>
