@@ -10,6 +10,7 @@
 "           https://github.com/amix/vimrc
 "
 " Sections:
+"    -> Setup Instructions
 "    -> Vundle stuff
 "    -> General
 "    -> VIM user interface
@@ -27,6 +28,13 @@
 "    -> My Own
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""
+" => Setup Instructions
+""""""""""""""""""""""""""""""
+" 1. Run command
+" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+" 2. Launch vim and run :PluginInstall
 
 """"""""""""""""""""""""""""""
 " => Vundle sutff
