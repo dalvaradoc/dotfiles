@@ -51,7 +51,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'morhetz/gruvbox'
-Plugin 'ycm-core/YouCompleteMe'
+" Plugin 'ycm-core/YouCompleteMe'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -492,13 +492,13 @@ nnoremap <leader>a ggVG
 " nnoremap K <C-u>
 
 " Autocomplete pair of characterers
-inoremap ( ()<Esc>i 
-inoremap { {}<Esc>i
-inoremap {<CR> {<CR>}<Esc>O
-inoremap [ []<Esc>i
-inoremap < <><Esc>i
-inoremap ' ''<Esc>i
-inoremap " ""<Esc>i
+" inoremap ( ()<Esc>i 
+" inoremap { {}<Esc>i
+" inoremap {<CR> {<CR>}<Esc>O
+" inoremap [ []<Esc>i
+" inoremap < <><Esc>i
+" inoremap ' ''<Esc>i
+" inoremap " ""<Esc>i
 
 " To create terminals more easy inside vim
 " vim-powered terminal in split window
